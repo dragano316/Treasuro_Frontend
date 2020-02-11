@@ -1,0 +1,54 @@
+
+.contact{
+    margin: 5% auto;
+    width: 70%;
+    text-align: center;
+    color:#fff;
+}
+
+.info{
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.infos{
+    padding: 10px;
+    margin: 10px;
+}
+
+.text{
+    width: 90%;
+    background-color: rgb(105,29,57,0.8);
+    border:none;
+    height: 30vh;
+    color:#fff;
+    outline: none;
+    padding: 10px;
+}
+.send{
+    text-align: center;
+}
+
+.send input{
+    width: fit-content;
+    background-color: #fff;
+    border: none;
+    color:red;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: 900;
+}
+@media screen and (min-width:767px){
+    .text{
+        width:50%;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .contact{
+        margin: 2.5% auto;
+        width: 90%;
+    }
+}
+
