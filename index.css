@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 100%;
   display: table;
-  background-image: url("./treasuro.jpg");
+  background-image: url("./abcd.png");
   background-attachment: fixed;
   background-size: 100% 100%;
   background-position: center;
@@ -39,7 +39,7 @@ html,
 body {
   /* background-image: linear-gradient(to right, #6DB3F2, #6DB3F2) url('./mobile.png'); */
   /* background: #6DB3F2 url('./mobile.png'); */
-  /* background-image: url("./mobile.png"); */
+  background-image: url("./mobile.png");
   /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
@@ -302,23 +302,40 @@ input:checked + .slider:before {
   }
 
 
-/* a:active{
-  background-color: yellow;
-  color:#000;
-} */
 
-/* .qrcode-text-btn {
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  background: url(qr.png) 50% 50% no-repeat;
-  cursor: pointer;
-}
 
-.qrcode-text-btn > input[type=file] {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-} */
+  .loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid gold; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin:auto auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  .loader-wrapper{
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 200;
+      overflow: none;
+      /* align-items: center; */
+      /* z-index: 10; */
+  }
+
+  .displaynone{
+    visibility: hidden;
+  }

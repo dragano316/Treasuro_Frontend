@@ -1,4 +1,6 @@
 const contact=(e)=>{
+    var loader=document.getElementById('loader')
+    loader.style.visibility="visible"
     e.preventDefault()
     // console.log('yes')
 
@@ -26,11 +28,14 @@ const contact=(e)=>{
         // console.log(data)
         alert('You have Successfully Submitted your Query!!')
         window.location='./index.html'
-        
+        loader.style.visibility="hidden"
 
         // location.href='./questions.html'
     })
-    .catch((e)=>alert('Please Try Again!!'))
+    .catch((e)=>{
+        alert('Please Try Again!!')
+        loader.style.visibility="hidden"
+    })
 
 
 }
