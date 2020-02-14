@@ -11,8 +11,10 @@
 .p1{
     display: flex;
     justify-content: space-between;
-
+    /* font-size: 20px; */
 }
+
+
 
 .dash{
     color:#fff;
@@ -48,4 +50,23 @@
 .leaderboard{
         width: 90% !important;
     }
+}
+
+@media screen and (min-width:601px){
+    .p1{
+        font-size: 20px;
+    }
+    .leaderboard{
+        padding: 50px;
+    }
+    .dash{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (min-width:601px){
+    .leaderboard,.currentpos{
+        background-color:rgba(40,13,56,.6);
+    }   
 }

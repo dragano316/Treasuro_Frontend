@@ -1,6 +1,11 @@
 window.onload=()=>{
+
+    const loader=document.getElementById('loader')
+    loader.style.visibility="visible"
+    console.log(loader)
+
 // console.log('yes')
-    fetch('http://localhost:3000/leaderboard')
+    fetch('http://34.242.25.204:3000/leaderboard')
     .then(res=> res.json())
     .then((data) =>{ 
         console.log(data)
@@ -13,12 +18,15 @@ window.onload=()=>{
             if(_id===data[i]._id){
                 window.localStorage.setItem('currentposition',i+1)
             }
-        scorers.innerHTML+=`<div class="p1"><span>${i+1}.</span><span>${data[i].FirstName} ${data[i].LastName}</span><span>${data[i].score}</span></div>`
+        scorers.innerHTML+=`<div class="p1"><span>${i+1}.</span><span style="text-transform:capitalize; text-align:left;">${data[i].FirstName} ${data[i].LastName}</span><span>${data[i].score}</span></div>`
         }
         position.innerHTML=window.localStorage.getItem('currentposition')
+        loader.style.visibility="hidden"
     })
-    .catch((e)=>alert('Access Denied.'))
-
+    .catch((e)=>{
+        alert('Access Denied.')
+        loader.style.visibility="hidden"
+    })
 
 }
 
@@ -26,7 +34,7 @@ window.onload=()=>{
 window.addEventListener('DOMContentLoaded',()=>{
     const current=document.getElementById('current')
 
-    if(window.localStorage.getItem('player_id') && (window.localStorage.getItem('name'))){
+    if(window.localStorage.getItem('player_id') && (window.localStorage.getItem('player_name'))){
         current.style.display="block"
         // na.style.display="block"
         // name.innerHTML=window.localStorage.getItem('name')

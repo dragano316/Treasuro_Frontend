@@ -11,6 +11,8 @@
         </title>
         <link rel="stylesheet" type="text/css" href="./index.css"> 
         <link rel="stylesheet" type="text/css" href="./registration.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900">
+        <link rel="stylesheet" type="text/css" href="./loader.css">
     </head>
     <body>
         <span style="font-size:30px;cursor:pointer;padding: 10px; color: #fff;" onclick="openNav()"  class="opener">&#9781;</span>
@@ -27,25 +29,26 @@
             </span>
             <audio id="audio" src="./clip.mp3"></audio>
             <a href="./contact.html">CONTACT</a>
-            <a href="./questions.html" id="showquestions">QUESTIONS</a>
+            <a href="./questions.html" id="showquestions">DASHBOARD</a>
             <div class="mmil">
-                POWERERED BY MMIL
+                POWERED BY MMIL
             </div>
-            <div class="logout" id="loggingout">LOGOUT</div>
+            <div class="logout" id="loggingout"  style="cursor: pointer;">LOGOUT</div>
           </div>
-
-
-          <div className="loader-wrapper" id="loader">
-            <div className="loader" ></div>
-          </div>
-
-
           
           <div style="width: 50%; margin: 0 auto;"> 
             <p class="heading"><img src="./logo.png" style="width: 100%;"></p>
           </div>
+
+
+          <div class="loader-wrapper" id="loader">
+            <div class="loader" ></div>
+          </div>
+
+
+          
         <form method="post" id="login">
-        <div class="registration">
+        <div class="loginn">
             <p style="text-align: center;" class="text_register">LOGIN</p>
                 <div class="form_box">
         <div class="b2">
@@ -57,15 +60,46 @@
             </div>
 
         </div>
-        <div class="b5">
-            <input type="submit" value="RESUME!">
-        </div>
+
+
+        <main class='container'>
+            <button class='myButt one'>
+                <div class='insider'></div>
+                Resume
+            </button>
+        </main>
+        <!-- <div class="b5">
+            <input type="submit" value="RESUME!"  style="outline: none;">
+        </div> -->
     </form>
     <div class="not_logged">
-        <p>NOT STARTED YET?</p>
-        <a href="./register.html" style="color: #fff;text-decoration: none;"><div class="gotor">REGISTER</div></a>
+        <p style="color:#fff">NOT STARTED YET?</p>
+        <!-- <button style="--content: 'Register';">
+            <div class="left"></div>
+              Register
+            <div class="right"></div>
+          </button> -->
+          <!-- <main class='container'>
+            <button class='myButt five'>
+            <div class='layer'>YEAH</div>
+                Hover over me
+            </button>
+        </main> -->
+
+        <button style="--content: 'Register';" id="gotoregister">
+            <div class="left"></div>
+              Register
+            <div class="right"></div>
+        </button>
+
+
+          <!-- <button class="btn btn-blow"><span class="">click me!</span></button> -->
+          <!-- <a target="_blank" href="https://twitter.com/kamildyrek"><svg style="width:2em;height:2em;position:fixed;top:1em;left:1em;opacity:.8;" viewBox="0 0 24 24"><path fill="#fff" d="M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg></a> -->
+        <!-- <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button gibson-three">Register</a> </div> -->
+            <!-- <a href="./register.html" style="color: #fff;text-decoration: none;"><div class="gotor">REGISTER</div></a> -->
     </div>
 
+    <div id="tellUser"  class="tellUser"  style="text-align: center; color: #fff; font-size: 20px; font-weight: 700; padding: 10px; margin: 5px;"></div>
 
 
         <script src="./login.js"></script>

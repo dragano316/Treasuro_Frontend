@@ -1,26 +1,32 @@
-
 .contact{
-    margin: 5% auto;
-    width: 70%;
+    margin: 0% auto;
+    margin-bottom: 0%;
+    width: 50%;
     text-align: center;
+    padding:10px;
+    padding-bottom: 2px;
     color:#fff;
+    background-color: rgba(40,13,56,.6);
 }
 
 .info{
     font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
+
+
 .infos{
     padding: 10px;
     margin: 10px;
 }
 
+
 .text{
     width: 90%;
-    background-color: rgb(105,29,57,0.8);
+    background-color: rgba(255,255,255,.7);
     border:none;
     height: 30vh;
-    color:#fff;
+    color:#000;
     outline: none;
     padding: 10px;
 }
@@ -49,6 +55,11 @@
     .contact{
         margin: 2.5% auto;
         width: 90%;
+        background-color: rgb(237, 139, 185,0.5);
+        border-radius: 15px;
+    }
+    .text{
+        border-radius: 15px;
     }
 }
 

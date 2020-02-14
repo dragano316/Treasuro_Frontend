@@ -10,6 +10,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="./index.css"> 
         <link rel="stylesheet" type="text/css" href="./contact.css"> 
+        <link rel="stylesheet" type="text/css" href="./loader.css">
 
     </head>
     <body>
@@ -27,15 +28,11 @@
             </span>
             <audio id="audio" src="./clip.mp3"></audio>
             <a href="./contact.html">CONTACT</a>
-            <a href="./questions.html" id="showquestions">QUESTIONS</a>
+            <a href="./questions.html" id="showquestions">DASHBOARD</a>
             <div class="mmil">
-                POWERERED BY MMIL
+                POWERED BY MMIL
             </div>
-            <div class="logout" id="loggingout">LOGOUT</div>
-          </div>
-
-          <div className="loader-wrapper" id="loader">
-            <div className="loader" ></div>
+            <div class="logout" id="loggingout"  style="cursor: pointer;">LOGOUT</div>
           </div>
 
         <div style="width: 50%; margin: 0 auto;"> 
@@ -43,21 +40,32 @@
         </div>
 
 
+        <div class="loader-wrapper" id="loader">
+            <div class="loader" ></div>
+          </div>
+
+          
         <div class="contact">
             <h1>CONTACT US:</h1>
             <!-- <a href="tel:8586037956"></a> -->
-            <p class="infos"><span class="info">Call :: </span><a href="tel:8586037956" style="text-decoration: underline; color: #fff; ">8586037956</a></p>
+            <p class="infos"><span class="info">CALL : </span><a href="tel:8586037956" style="text-decoration: underline; color: #fff; ">8586037956</a></p>
             <!-- <p class="infos"><span class="info">MAIL:</span>jssmmil@gmail.com</p> -->
-            <p class="infos"><span class="info">FACEBOOK :: </span>facebook/jssmmil</p>
-            <p class="infos"><span class="info">INSTAGRAM :: </span>insta/jssmmil</p>
+            <p class="infos"><span class="info">FACEBOOK : </span><a href='https://www.facebook.com/jssmmil/' style="color: #fff;">facebook/jssmmil</a></p>
+            <p class="infos"><span class="info">INSTAGRAM : </span><a href='https://www.instagram.com/jssmmil/' style="color: #fff;">insta/jssmmil</a></p>
         <!-- </div> -->
         <!-- <div> -->
         <form id="contact" method="post">
             <h3 style="padding:5px;">Have Suggestions? Let us Know!!</h3>
-            <textarea class="text" id="comment" value="Type Here"></textarea>
-            <div  class="send">
+            <textarea class="text" id="comment" value="Type Here" required></textarea>
+            <!-- <div  class="send">
                 <input type="submit" value="SEND">
-             </div>
+             </div> -->
+             <main class='container'>
+                <button class='myButt one'>
+                    <div class='insider'></div>
+                    Resume
+                </button>
+            </main>
         </form>
         </div>
         <script src="./contact.js"></script>

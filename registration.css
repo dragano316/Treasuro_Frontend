@@ -1,11 +1,22 @@
 .registration{
-    width: 50%;
+    width: 40%;
     margin: 5% auto;
     margin-bottom: 10px;
     border-radius: 50px;
     border:2px solid #fff;
     padding: 20px;
     background-color:rgb(105,29,57,0.8);
+}
+
+.loginn{
+    width: 35%;
+    margin: 5% auto;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border:2px solid #fff;
+    padding: 20px;
+    background-color:rgb(105,29,57,0.8);
+    /* animation: bubbles 5s linear infinite both; */
 }
 
 .text_register{
@@ -77,14 +88,72 @@
     text-decoration: none;
 }
 
-@media screen and (min-width:320px) and (max-width:767px){
+/* @media screen and (min-width:320px) and (max-width:767px){
     .registration{
         width: 75%;
     }
-}
+} */
 
 @media screen and (min-width:320px) and (max-width:767px){
-    .registration{
+    .registration,.loginn{
         width: 90%;
+    }   
+}
+
+@media screen and (min-width:601px){
+    .registration,.loginn{
+        background-color:rgba(40,13,56,.6);
+        padding-top: 5px;
+    }
+    .b5 input,.gotor{
+        background-color: #280d38;
+        color:#fff;
+    }   
+}
+
+@media screen and (min-width:320px) and (max-width:500px){
+    .registration,.loginn{
+        padding: 5px;
     }
 }
+
+
+.not_logged{
+    background-color: rgba(40,13,56,.6);
+    width: 25%;
+    margin: 5px auto;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    padding: 5px;
+    /* width: fit-content; */
+    /* text-align: center; */
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:600px){
+
+    .not_logged{
+        background-color: rgba(191, 41, 111,1);
+        width: 60%;
+        margin: 15px auto;
+        border: none;
+        padding: 10px;
+    }
+    .b1,.b2,.b3,.b4{
+        padding: 15px;
+    }
+}
+
+
+
+@media screen and (min-width:601px) and (max-width:800px){
+    .not_logged{
+        width: 40%;
+    }
+}
+
+
+
+
+

@@ -1,23 +1,27 @@
 
 @font-face {
     font-family: neon;
-    src: url("font.otf");
+    src: url("font1.ttf");
   }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .questionboxxx{
-
     margin: 10% auto;
     margin-bottom: 5%;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
+    
     background-color: rgb(105,29,57,0.8);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 /* min-height: 75%; */
     /* height: 50vh; */
-    width: 75%;
+    width: 90%;
     word-wrap: break-word;
     color: #fff;
 
@@ -32,7 +36,7 @@
 .answer_box{
     width: 60%;
     text-align: center;
-    background-color:rgb(105,29,57,0.8) ;
+    background-color:rgba(40,13,56,.6) ;
     border-radius: 15px;
     margin: 10px auto;
 }
@@ -73,43 +77,30 @@
 
 @media screen and (min-width:700px){
     .currentpos{
-        width: 50%;
+        width: 30%;
     }
 }
 
 
 @media screen and (min-width:600px){
-
     .questionboxxx{
-        width: 50%;
+        width: 40%;
         padding-top: 50px;
         padding-bottom: 50px;
-        margin:10% auto;
+        margin:2.5% auto;
         margin-bottom:10px;
+        background-color: rgba(40,13,56,.6);
+    }
 
+    .currentpos{
+        background-color: rgba(40,13,56,.6);
     }
 
     .answer_box{
         width: 30%;
     }
 
-
-
 }
 
 
-/* .qrcode-text-btn {
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-    background: url(qr.png) 50% 50% no-repeat;
-    cursor: pointer;
-  }
-  
-  .qrcode-text-btn > input[type=file] {
-    position: absolute;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-  } */
+

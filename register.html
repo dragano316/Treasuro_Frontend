@@ -11,6 +11,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="./index.css"> 
         <link rel="stylesheet" type="text/css" href="./registration.css"> 
+        <link rel="stylesheet" type="text/css" href="./loader.css">
 
     </head>
     <body>
@@ -28,21 +29,25 @@
             </span>
             <audio id="audio" src="./clip.mp3"></audio>
             <a href="./contact.html">CONTACT</a>
-            <a href="./questions.html" id="showquestions">QUESTIONS</a>
+            <a href="./questions.html" id="showquestions"  style="cursor: pointer;">DASHBOARD</a>
             <div class="mmil">
-                POWERERED BY MMIL
+                POWERED BY MMIL
             </div>
             <div class="logout" id="loggingout">LOGOUT</div>
           </div>
 
-
-          <div className="loader-wrapper" id="loader">
-            <div className="loader" ></div>
-          </div>
         <!-- <div> -->
             <div style="width: 50%; margin: 0 auto;"> 
                 <p class="heading"><img src="./logo.png" style="width: 100%;"></p>
               </div>
+
+
+
+              <div class="loader-wrapper" id="loader">
+                <div class="loader" ></div>
+              </div>
+
+              
             <!-- TREAS -->
         <!-- </div> -->
         <!-- <div class="top_img"><img src="./Black.png" class="img"></div> -->
@@ -61,18 +66,29 @@
                 <input type="email" required placeholder="E-MAIL ID" id="email" class="i2" autocomplete="off">
             </div>
             <div class="b4">
-                <input type="password" required placeholder="PASSWORD" id="password" class="i2" autocomplete="off">
+                <input type="password" required placeholder="PASSWORD" id="password" class="i1" autocomplete="off">
+                <input type="tel" required placeholder="MOBILE" id="mobile" class="i1" autocomplete="off" pattern="[0-9]{10}">
                 <!-- <input type="text" required placeholder="CONFIRM PASSWORD" id="cpassword" class="i1"> -->
             </div>
+            <!-- <div class="b5"> -->
+
+                <!-- <input type="text" required placeholder="CONFIRM PASSWORD" id="cpassword" class="i1"> -->
+            <!-- </div> -->
             </div>
 
         </div>
-        <div class="b5">
-            <input type="submit" value="BEGIN!">
-        </div>
+        <main class='container'>
+            <button class='myButt one'>
+                <div class='insider'></div>
+                Register
+            </button>
+        </main>
+        <!-- <div class="b5">
+            <input type="submit" value="BEGIN!" style="outline: none;">
+        </div> -->
     </form>
+    <div id="tellUser" class="tellUser" style="text-align: center; color: #fff; font-size: 20px; font-weight: 700; padding: 10px; margin: 5px;"></div>
 
-        
         <script src="./signup.js"></script>
         <script src="./general.js"></script>
     </body>

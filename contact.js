@@ -1,8 +1,11 @@
 const contact=(e)=>{
-    var loader=document.getElementById('loader')
-    loader.style.visibility="visible"
+
     e.preventDefault()
-    // console.log('yes')
+
+    const loader=document.getElementById('loader')
+    loader.style.visibility="visible"
+    console.log(loader)
+
 
     const comment=document.getElementById('comment').value
 
@@ -10,7 +13,7 @@ const contact=(e)=>{
         comment
     }
 
-    fetch('http://localhost:3000/contact',{
+    fetch('http://34.242.25.204:3000/contact',{
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -26,15 +29,14 @@ const contact=(e)=>{
     })
     .then((data)=>{
         // console.log(data)
+        loader.style.visibility="hidden"
         alert('You have Successfully Submitted your Query!!')
         window.location='./index.html'
-        loader.style.visibility="hidden"
-
         // location.href='./questions.html'
     })
     .catch((e)=>{
-        alert('Please Try Again!!')
         loader.style.visibility="hidden"
+        alert('Please Try Again!!')
     })
 
 

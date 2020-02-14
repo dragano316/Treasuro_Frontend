@@ -8,8 +8,9 @@
         <title>
             Treasuro
         </title>
-        <link rel="stylesheet" type="text/css" href="./index.css"> 
-
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="stylesheet" type="text/css" href="./birds.css">
+        <link rel="stylesheet" type="text/css" href="./loader.css">
     </head>
     <body>
         <span style="font-size:30px;cursor:pointer;padding: 10px; color: #fff;" onclick="openNav()"  class="opener">&#9781;</span>
@@ -25,26 +26,72 @@
             </label>
             <audio id="audio" src="./clip.mp3"></audio>
             <a href="./contact.html">CONTACT</a>
-            <a href="./questions.html" id="showquestions">QUESTIONS</a>
+            <a href="./questions.html" id="showquestions">DASHBOAD</a>
             <div class="mmil">
-                POWERERED BY MMIL
+                POWERED BY MMIL
             </div>
-            <div class="logout" id="loggingout">LOGOUT</div>
+            <div class="logout" id="loggingout" style="cursor: pointer;">LOGOUT</div>
           </div>
-          <div className="loader-wrapper" id="loader">
-            <div className="loader" ></div>
-          </div>
+
+
+          <div class="loader-wrapper" id="loader" style="visibility: visible;">
+            <div class="loader" ></div>
+          </div>     
+          
 
         <!-- <div class="top_img"><img src="./BLACK.png" class="img"></div> -->
         <div  class="homebox">
             <p class="heading"><img src="./logo.png" style="width: 100%;"></p>
             <div class="innerbox">
                 <a href="./login.html" class="login">Login</a>
-                <a href="./register.html" class="register"><span>Register</span></a>
+                <a href="./register.html" class="register">Register</a>
             </div>
             <div class="dashboard" id="dashboard">Leaderboard</div>
         </div>
 
+
+
+
+        <div>
+            <div class="container">
+        <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+          </div>
+          <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+          </div>
+          <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+          </div>
+          <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+          </div>
+          </div>
+        </div>
+<!-- 
+        <div class="bird-container">
+            <div class="bird bird--one"></div>
+           </div> -->
+           
+        
+        <!-- <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+        </div>
+        
+        <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+        </div>
+        
+        <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+        </div>
+        
+        <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+        </div> -->
+
+
+        
         <!-- <label class=qrcode-text-btn style="background-color: #fff;">
             <input type=file
                    accept="image/*"
@@ -53,5 +100,6 @@
           </label> -->
            <script src="./navigation.js"></script>
            <script src="./general.js"></script> 
+           <script src="./index.js"></script> 
     </body>
 </html>

@@ -11,6 +11,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="./index.css"> 
         <link rel="stylesheet" type="text/css" href="./question.css"> 
+        <link rel="stylesheet" type="text/css" href="./loader.css">
     </head>
     <body>
         <span style="font-size:30px;cursor:pointer;padding: 10px; color: #fff;" onclick="openNav()"  class="opener">&#9781;</span>
@@ -27,23 +28,26 @@
             </span>
             <audio id="audio" src="./clip.mp3"></audio>
             <a href="./contact.html">CONTACT</a>
-            <a href="./questions.html" id="showquestions">QUESTIONS</a>
+            <a href="./questions.html" id="showquestions">DASHBOARD</a>
             <div class="mmil">
-                POWERERED BY MMIL
+                POWERED BY MMIL
             </div>
-            <div class="logout" id="loggingout">LOGOUT</div>
+            <div class="logout" id="loggingout"  style="cursor: pointer;">LOGOUT</div>
           </div>
 
-
-          <div className="loader-wrapper" id="loader">
-            <div className="loader" ></div>
-          </div>
-
-          
           <div style="width: 50%; margin: 0 auto;"> 
             <p class="heading"><img src="./logo.png" style="width: 100%;"></p>
           </div>
-          <div class="currentpos">
+
+
+          <div class="loader-wrapper" id="loader">
+            <div class="loader" ></div>
+          </div>
+
+
+
+          
+          <div class="currentpos"  id="box1">
             <div class="pos">
                 <p>Your Current Level:</p>
                 <div id="level"></div>
@@ -56,7 +60,6 @@
                 <p>Attempts Left For This Question:</p>
                 <div id="attemptsleft"></div>
             </div>
-
         </div>
 
 
@@ -64,28 +67,30 @@
 
 
 <!-- <div class="outerbox"> -->
-    <div class="questionboxxx">
+    <div class="questionboxxx" id="box2">
         <!-- <div class="content"> -->
-            <p style="padding: 5px;">Question</p>
-            <div id="newques"></div>
+            <div style="padding: 5px;" id="idd"></div>
+            <div id="newques" style="font-weight: 700;"></div>
         <!-- </div> -->
     </div>
-    <form method="post" id="check">
+
+    <div id="ans" style="text-align: center; margin: 5px; color: #fff; font-weight: 700;"></div>
+    <!-- <form method="post" id="check">
     <div class="answer_box">
-        <input type="text" placeholder="YOUR ANSWER" id="answer" autocomplete="off">
+        <input type="text" placeholder="YOUR ANSWER" id="answer" autocomplete="off"> -->
         <!-- <label class=qrcode-text-btn style="background-color: #fff;">
             <input type=file
                    accept="image/*"
                    capture=environment
                    tabindex=-1>
           </label> -->
-    </div>
+    <!-- </div>
 
     <div class="click">
         <input type="submit" value="SUBMIT">
 
     </div>
-</form>
+</form> -->
 
 
     <!-- </div> -->

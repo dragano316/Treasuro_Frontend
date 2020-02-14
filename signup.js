@@ -1,5 +1,13 @@
 const register=(e)=>{
     e.preventDefault()
+
+    const loader=document.getElementById('loader')
+    loader.style.visibility="visible"
+    console.log(loader)
+
+
+
+    const tellUser=document.getElementById('tellUser')
     // console.log('yes')
 
     const id=document.getElementById('uid').value
@@ -7,19 +15,21 @@ const register=(e)=>{
     const firstname=document.getElementById('fname').value
     const lastname=document.getElementById('lname').value
     const email=document.getElementById('email').value
-
+    const mobile=document.getElementById('mobile').value
     console.log(id)
     console.log(password)
-
     const registerInfo={
         SignupID:id,
         Password:password,
         Email:email,
         FirstName:firstname,
-        LastName:lastname
+        LastName:lastname,
+        PhoneNumber:mobile
     }
 
-    fetch('http://localhost:3000/users',{
+    // http://localhost:3000/users
+    //
+    fetch('http://34.242.25.204:3000/users',{
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -35,13 +45,19 @@ const register=(e)=>{
     })
     .then((data)=>{
         console.log(data)
+        loader.style.visibility="hidden"
         const user_id=data.user._id
-        window.localStorage.setItem('name',data.user.FirstName+' '+data.user.LastName)
+        window.localStorage.setItem('player_name',data.user.FirstName+' '+data.user.LastName)
         window.localStorage.setItem('player_id',data.user._id)
-        window.location=`./questions.html?user=${user_id}`
+        // window.location=`./questions.html`
     })
-    .catch((e)=>{alert('User Exists')
-    window.location='./register.html'
+    .catch((e)=>{
+        console.log(e)
+        loader.style.visibility="hidden"
+        tellUser.innerHTML="Invalid User!!"
+        // setTimeout(function(){
+            // window.location='./register.html'
+        // }, 2000);
 })
 
 
