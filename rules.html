@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>
+            Treasuro
+        </title>
+        <link rel="stylesheet" type="text/css" href="./index.css"> 
+        <link rel="stylesheet" type="text/css" href="./rules.css"> 
+        <link rel="stylesheet" type="text/css" href="./loader.css">
+    </head>
+    <body>
+        <span style="font-size:30px;cursor:pointer;padding: 10px; color: #fff;" onclick="openNav()" class="opener">&#9781;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <p id="naming"></p>
+            <a href="./index.html"  id="home">HOME</a>
+            <a href="./leaderboard.html">LEADERBOARD</a>
+            <span href="#" style="width: 50%;">SOUND</span>
+            <label class="switch" >
+                <input type="checkbox" id="sound">
+                <span class="slider round" id="box"></span>
+            </label>              
+            </span>
+            <audio id="audio" src="./final.mp3"></audio>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./questions.html" id="showquestions">DASHBOARD</a>
+            <div class="mmil">
+                POWERED BY MMIL
+            </div>
+            <div class="logout" id="loggingout"  style="cursor: pointer;">LOGOUT</div>
+          </div>
+
+        <div style="width: 50%; margin: 0 auto;"> 
+          <p class="heading"><img src="./finallogo.png" style="width: 100%;"></p>
+        </div>
+
+
+        <div class="loader-wrapper" id="loader">
+            <div class="loader" ></div>
+          </div>
+
+          
+        <div class="contact">
+            <h1>RULES</h1>  
+            <p class="rules">1. Game Play: At every level, you will be provided with a clue which will point to a
+            location. Once you crack the clue, you will find a QR code at the location scanning upon
+            which you will get access to a string. This string will lead you to the next level.</p>
+            <p class="rules">2. Duration: The online quest which will be live for two days.</p>
+            <p class="rules">3. Submissions: Every level holds 10 points. After each wrong submission, the total
+            points will get deducted by 2. Once the score reaches 4, it will remain constant. For
+            eg., 10->8->6->4->constant. The maximum number of attempts for each level is 5.
+            All the submissions of a level will be recorded in our DB so avoid guess work and play
+            fair.</p>
+            <p class="rules">4. Solutions: Every clue will be pointing towards only one location, which can be online
+            or offline.</p>
+            <p class="rules">5. Appeals: There are no appeals in this game but if you think there is an error, feel free
+            to contact us.</p>
+            <p class="rules">6. Judgements:<br>
+            - Use the unique registration ID provided to you at the time of registration as user name.<br>
+            - The society holds the right to disqualify any individual in case of any unethical means.</p>
+            <p class="rules">*All the decisions made by the society are final.</p>
+        
+        </div>
+        <script src="./general.js"></script>
+    </body>
+</html>
