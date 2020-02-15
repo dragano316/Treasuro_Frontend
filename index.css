@@ -43,8 +43,8 @@ body {
   /* background: #6DB3F2 url('./mobile.png'); */
   background-image: url("./mobile.png");
   /* background-attachment: fixed; */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  background-position: 100% 100%;
   background-repeat:  no-repeat;
   font-family: neon;
 }
