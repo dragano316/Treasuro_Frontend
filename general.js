@@ -1,27 +1,45 @@
 window.addEventListener('DOMContentLoaded',(event)=>{
 
 
-    if(window.localStorage.getItem('player_song')==="true" && event.target){
-        document.getElementById('sound').checked=true
-        // console.log('yeshasit')
+    if(window.localStorage.getItem('player_song')==="true"){
+        
+      console.log('onload')
         var audio = document.getElementById("audio").play()
-        audio.loop=true
 
-        if (audio !== undefined) {
-        audio.then(function() {
+        audio.then(res=>{
+          console.log('playing')
+          document.getElementById('sound').checked=true
+          audio.loop=true
+        })
+        .catch(e=>{
+          console.log('notplaying')
+          window.localStorage.removeItem('player_song')
+        })
+    }
+        // console.log('yeshasit')
+
+
+        // console.log(audio)
+        // audio.loop=true
+
+        // if (audio === undefined) {
+        // audio.then(function() {
+          // console.log('notplayihn')
+          // window.localStorage.removeItem('player_song')
+          // document.getElementById('sound').checked=false
+
+          // audio.loop=true
+          // audio.play()
             // console.log('playing')
               // Automatic playback started!
-            }).catch(function(error) {
-                // console.log('notplayihn')
-                window.localStorage.removeItem('player_song')
-                document.getElementById('sound').checked=false
+            // }).catch(function(error) {
+
 
                 // Automatic playback failed.
               // Show a UI element to let the user manually start playback.
-            });
-          }
+            // }
 
-    }
+    // }
 
     const logoutbutton=document.getElementById('loggingout')
     const name=document.getElementById('naming')
@@ -117,14 +135,7 @@ function stopPlay(){
 
 
 
-// window.onload=()=>{
-//     if(window.localStorage.getItem('player_song')==="true"){
-//         document.getElementById('sound').checked=true
-//         console.log('yeshasit')
-//         var audio = document.getElementById("audio");
-//         audio.load()
-//     }
 
-// }
+
 
 

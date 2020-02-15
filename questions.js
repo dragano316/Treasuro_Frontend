@@ -111,7 +111,22 @@ window.addEventListener('DOMContentLoaded',()=>{
                 }
             })
             .then((data)=>{
-                // console.log(data)
+                console.log(data)
+                if(data.answer==="10"||data.answer==="-5"){
+                    console.log('yes')
+                    const ans=document.getElementById('ans')
+                    // console.log(newquest)
+                    // window.
+                    window.localStorage.setItem('score',data.user.score)
+                    window.localStorage.setItem('level',data.user.level)
+                    window.localStorage.setItem('attempts',data.user.attempts)
+                    ans.innerHTML=`${data.answer} points`
+                    setTimeout(function(){
+                        window.location='./questions.html';
+                     },3000);
+                }
+
+                else{
                 const newquest=document.getElementById('newques')
                 // document.getElementById('check').reset()
                 window.localStorage.setItem('score',data.user.score)
@@ -123,7 +138,6 @@ window.addEventListener('DOMContentLoaded',()=>{
                 level.innerHTML=window.localStorage.getItem('level')
                 attempts.innerHTML=window.localStorage.getItem('attempts')
                 score.innerHTML=window.localStorage.getItem('score')
-        
                 if(data.answer==="Wrong"){
                     // alert('Wrong Answer')
                     document.getElementById('ans').innerHTML='Wrong Answer!! You will be Redirected to the Dashboard.'
@@ -160,8 +174,9 @@ window.addEventListener('DOMContentLoaded',()=>{
                     // alert('Right Answer!!!')
                     // newquest.innerHTML=data.newquestion.level+' '+data.newquestion.question
                 }
+            }
             })
-            .catch((e)=>alert(e))
+            .catch((e)=>console.log(e))
         
         }
 
