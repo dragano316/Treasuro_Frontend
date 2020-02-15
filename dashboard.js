@@ -2,13 +2,13 @@ window.onload=()=>{
 
     const loader=document.getElementById('loader')
     loader.style.visibility="visible"
-    console.log(loader)
+    // console.log(loader)
 
 // console.log('yes')
     fetch('http://34.242.25.204:3000/leaderboard')
     .then(res=> res.json())
     .then((data) =>{ 
-        console.log(data)
+        // console.log(data)
         const _id=window.localStorage.getItem('player_id')
         const scorers=document.getElementById('scorers')
         const position=document.getElementById('position')

@@ -3,12 +3,8 @@ const register=(e)=>{
 
     const loader=document.getElementById('loader')
     loader.style.visibility="visible"
-    console.log(loader)
-
-
 
     const tellUser=document.getElementById('tellUser')
-    // console.log('yes')
 
     const id=document.getElementById('uid').value
     const password=document.getElementById('password').value
@@ -16,8 +12,6 @@ const register=(e)=>{
     const lastname=document.getElementById('lname').value
     const email=document.getElementById('email').value
     const mobile=document.getElementById('mobile').value
-    console.log(id)
-    console.log(password)
     const registerInfo={
         SignupID:id,
         Password:password,
@@ -44,15 +38,16 @@ const register=(e)=>{
         }
     })
     .then((data)=>{
-        console.log(data)
+        // console.log(data)
         loader.style.visibility="hidden"
+        tellUser.innerHTML=''
         const user_id=data.user._id
         window.localStorage.setItem('player_name',data.user.FirstName+' '+data.user.LastName)
         window.localStorage.setItem('player_id',data.user._id)
-        // window.location=`./questions.html`
+        window.location=`./questions.html`
     })
     .catch((e)=>{
-        console.log(e)
+        // console.log(e)
         loader.style.visibility="hidden"
         tellUser.innerHTML="Invalid User!!"
         // setTimeout(function(){
@@ -60,8 +55,13 @@ const register=(e)=>{
         // }, 2000);
 })
 
-
 }
 
-
 document.getElementById('register').addEventListener('submit',register)
+
+
+window.onload=()=>{
+        if(window.localStorage.getItem('player_name') && window.localStorage.getItem('player_id')){
+            window.location='./questions.html'
+        }
+    }

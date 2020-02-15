@@ -6,6 +6,7 @@
     height: auto;
     overflow-y: auto;
     border-radius: 15px;
+
 }
 
 .p1{
@@ -64,9 +65,9 @@
     }
 }
 
-
+/* 
 @media screen and (min-width:601px){
     .leaderboard,.currentpos{
         background-color:rgba(40,13,56,.6);
     }   
-}
+} */

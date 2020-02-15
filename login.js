@@ -3,7 +3,7 @@ const login=(e)=>{
 
     const loader=document.getElementById('loader')
     loader.style.visibility="visible"
-    console.log(loader)
+    // console.log(loader)
 
 
     const tellUser=document.getElementById('tellUser')
@@ -12,8 +12,8 @@ const login=(e)=>{
     const id=document.getElementById('uid').value
     const password=document.getElementById('password').value
 
-    console.log(id)
-    console.log(password)
+    // console.log(id)
+    // console.log(password)
 
     const loginInfo={
         SignupID:id,
@@ -34,7 +34,7 @@ const login=(e)=>{
         }
     })
     .then((data)=>{
-        console.log(data)
+        // console.log(data)
         loader.style.visibility="hidden"
 
         if(data.ans==="Freeze"){
@@ -84,3 +84,10 @@ document.getElementById('login').addEventListener('submit',login)
 document.getElementById('gotoregister').addEventListener('click',()=>{
     window.location='./register.html'
 })
+
+
+window.onload=()=>{
+    if(window.localStorage.getItem('player_name') && window.localStorage.getItem('player_id')){
+        window.location='./questions.html'
+    }
+}

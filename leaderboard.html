@@ -19,15 +19,15 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <p id="naming"></p>
-            <a href="./index.html">HOME</a>
-            <a href="./dashboard.html">LEADERBOARD</a>
+            <a href="./index.html"  id="home">HOME</a>
+            <a href="./leaderboard.html">LEADERBOARD</a>
             <span href="#" style="width: 50%;">SOUND</span>
-            <label class="switch" id="sound">
-                <input type="checkbox" id="box">
-                <span class="slider round"></span>
+            <label class="switch">
+                <input type="checkbox" id="sound">
+                <span class="slider round"  id="box"></span>
             </label>              
             </span>
-            <audio id="audio" src="./clip.mp3"></audio>
+            <audio id="audio" src="./final.mp3"></audio>
             <a href="./contact.html">CONTACT</a>
             <a href="./questions.html" id="showquestions">DASHBOARD</a>
             <div class="mmil">
@@ -39,7 +39,7 @@
 
           
           <div style="width: 50%; margin: 0 auto;"> 
-            <p class="heading"><img src="./logo.png" style="width: 100%;"></p>
+            <p class="heading"><img src="./finallogo.png" style="width: 100%;"></p>
           </div>
 
 
@@ -55,7 +55,7 @@
                 <p id="position">6</p>
             </div>
             <div class="points">
-                <p>Your current points</p>
+                <p>Your Current Points:</p>
                 <p id="points">80</p>
             </div>
 
@@ -63,7 +63,6 @@
         <div class="leaderboard">
             <p class="dash">Leaderboard</p>
             <div class="scorers" id="scorers">
-
             </div>
 
         </div>

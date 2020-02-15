@@ -17,31 +17,26 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <p id="naming"></p>
-            <a href="./index.html">HOME</a>
-            <a href="./dashboard.html">LEADERBOARD</a>
+            <a href="./index.html"  id="home">HOME</a>
+            <a href="./leaderboard.html">LEADERBOARD</a>
             <span href="#" style="width: 50%;">SOUND</span>
-            <label class="switch" id="sound">
-                <input type="checkbox" id="box">
-                <span class="slider round"></span>
+            <label class="switch" >
+                <input type="checkbox" id="sound">
+                <span class="slider round"  id="box"></span>
             </label>
-            <audio id="audio" src="./clip.mp3"></audio>
+            <audio id="audio" src="./final.mp3" allow="autoplay"></audio>
             <a href="./contact.html">CONTACT</a>
-            <a href="./questions.html" id="showquestions">DASHBOAD</a>
+            <a href="./questions.html" id="showquestions">DASHBOARD</a>
             <div class="mmil">
                 POWERED BY MMIL
             </div>
             <div class="logout" id="loggingout" style="cursor: pointer;">LOGOUT</div>
-          </div>
-
-
-          <div class="loader-wrapper" id="loader" style="visibility: visible;">
+        </div>
+        <div class="loader-wrapper" id="loader" style="visibility: visible;">
             <div class="loader" ></div>
-          </div>     
-          
-
-        <!-- <div class="top_img"><img src="./BLACK.png" class="img"></div> -->
+        </div>     
         <div  class="homebox">
-            <p class="heading"><img src="./logo.png" style="width: 100%;"></p>
+            <p class="heading"><img src="./finallogo.png" style="width: 100%;"></p>
             <div class="innerbox">
                 <a href="./login.html" class="login">Login</a>
                 <a href="./register.html" class="register">Register</a>
@@ -52,52 +47,20 @@
 
 
 
-        <div>
-            <div class="container">
-        <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
-          </div>
-          <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
-          </div>
-          <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-          </div>
-          <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
-          </div>
-          </div>
+        <div class="container">
+            <div class="bird-container bird-container--one">
+                <div class="bird bird--one"></div>
+            </div>
+            <div class="bird-container bird-container--two">
+                <div class="bird bird--two"></div>
+            </div>
+            <div class="bird-container bird-container--three">
+                <div class="bird bird--three"></div>
+            </div>
+            <div class="bird-container bird-container--four">
+                <div class="bird bird--four"></div>
+            </div>
         </div>
-<!-- 
-        <div class="bird-container">
-            <div class="bird bird--one"></div>
-           </div> -->
-           
-        
-        <!-- <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
-        </div>
-        
-        <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
-        </div>
-        
-        <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-        </div>
-        
-        <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
-        </div> -->
-
-
-        
-        <!-- <label class=qrcode-text-btn style="background-color: #fff;">
-            <input type=file
-                   accept="image/*"
-                   capture=environment
-                   tabindex=-1>
-          </label> -->
            <script src="./navigation.js"></script>
            <script src="./general.js"></script> 
            <script src="./index.js"></script> 

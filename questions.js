@@ -84,12 +84,12 @@ window.addEventListener('DOMContentLoaded',()=>{
             document.getElementById('box1').style.display="none"
             document.getElementById('box2').style.display="none"
             const user_id=window.localStorage.getItem('player_id')
-            console.log(window.location.search)
+            // console.log(window.location.search)
             const urlParams = new URLSearchParams(window.location.search);
             const myParam1 = urlParams.get('ans');
             const myParam2 = urlParams.get('level');
-            console.log(myParam1)
-            console.log(myParam2)
+            // console.log(myParam1)
+            // console.log(myParam2)
 
             const checking={
                 answer:myParam1,
@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded',()=>{
                 }
             })
             .then((data)=>{
-                console.log(data)
+                // console.log(data)
                 const newquest=document.getElementById('newques')
                 // document.getElementById('check').reset()
                 window.localStorage.setItem('score',data.user.score)
@@ -169,7 +169,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         
             const loader=document.getElementById('loader')
             loader.style.visibility="visible"
-            console.log(loader)
+            // console.log(loader)
 
         const user_id=window.localStorage.getItem('player_id')
 
@@ -177,7 +177,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     fetch(`http://34.242.25.204:3000/getquestions?user=${user_id}`)
     .then(res=> res.json())
     .then((data)=>{
-        console.log(data)
+        // console.log(data)
         const newquest=document.getElementById('newques')
         const id=document.getElementById('idd')
         window.localStorage.setItem('score',data.person.score)
@@ -196,7 +196,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         
 })
 .catch((e)=>{
-    console.log(e)
+    // console.log(e)
     loader.style.visibility="hidden"
 })
     }

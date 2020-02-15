@@ -4,7 +4,7 @@ const contact=(e)=>{
 
     const loader=document.getElementById('loader')
     loader.style.visibility="visible"
-    console.log(loader)
+    // console.log(loader)
 
 
     const comment=document.getElementById('comment').value

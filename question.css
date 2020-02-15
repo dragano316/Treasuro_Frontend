@@ -89,12 +89,9 @@
         padding-bottom: 50px;
         margin:2.5% auto;
         margin-bottom:10px;
-        background-color: rgba(40,13,56,.6);
+        /* background-color: rgba(40,13,56,.6); */
     }
 
-    .currentpos{
-        background-color: rgba(40,13,56,.6);
-    }
 
     .answer_box{
         width: 30%;
