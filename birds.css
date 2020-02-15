@@ -58,7 +58,7 @@
 }
 .bird-container {
     position: absolute;
-    top: -22%;
+    top: -20%;
     left: -7.5vw;
     -webkit-transform: scale(0);
     transform: scale(0);
